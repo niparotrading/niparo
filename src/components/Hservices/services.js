@@ -67,20 +67,21 @@ export default function Services() {
                     {data.map((service) => (
                         <Grid className="image-container" css={{
                             margin: '24px',
-                            height: '300px',
-                            width: '300px',
-                            objectFit: 'fill'
+                            height: '300px', 
+                            width: '300px', 
                         }}>
-                            <Image css={{
-                                height: '100%',
-                                width: '100%',
-                                objectFit: 'cover',
-                                "@hover":{
-                                    cursor: 'pointer'
-                                }
-                            }}
+                             <Image
                                 alt={service.name}
-                                src={service.image} />
+                                src={service.image}
+                                css={{
+                                    height: '300px', 
+                                    width: '300px', 
+                                    objectFit:"cover",
+                                    "@hover":{
+                                        cursor: 'pointer'
+                                    }
+                                }} 
+                            />
 
                             <Text className="image-title" css={{
                                 fontSize: '$lg',
