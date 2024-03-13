@@ -5,34 +5,55 @@ import Office from '../../assets/PortfolioImages/OfficeStationary.jpg'
 import FirstAid from '../../assets/PortfolioImages/FirstAid.jpg'
 import Gym from '../../assets/PortfolioImages/GymEquipment.jpg'
 import Sanitization from '../../assets/PortfolioImages/Santization.jpg'
+import Toiletteries from '../../assets/PortfolioImages/Toiletteries.jpg'
+import CorperateEvent from '../../assets/PortfolioImages/CorporateEvent.jpg'
+import PantryEdibles from '../../assets/PortfolioImages/PantryEdibles.jpg'
+import Cutleries from '../../assets/PortfolioImages/Cutlery.jpg' 
+
 import { Button, Col, Grid, Link, Row, Text, Image} from "@nextui-org/react";
 import "./portfolioPage.css"
 
 export default function PortfolioPage(){
     let data = [
         {
-            name: 'IT Consumables',
-            image: ITConsumables
+            name: 'Office Stationary',
+            image: Office
         },
         {
             name: 'Janitorial Equipment',
             image: Janitorial
         },
         {
-            name: 'First Aid Kits',
-            image: FirstAid
+            name:"Toiletteries",
+            image:Toiletteries,
         },
         {
-            name: 'Office Stationary',
-            image: Office
+            name: 'Sanitization',
+            image: Sanitization
+        },
+        {
+            name: 'IT Consumables',
+            image: ITConsumables
+        },
+        {
+            name: 'Corporate Events',
+            image: CorperateEvent
+        },
+        {
+            name: 'Pantry Edibles',
+            image: PantryEdibles
+        },
+        {
+            name: 'First Aid Kits',
+            image: FirstAid
         },
         {
             name: 'Gym Equipment',
             image: Gym
         },
         {
-            name: 'Sanitization',
-            image: Sanitization
+            name: 'Cutlieries & Crockeries',
+            image: Cutleries
         },
     ]
     return(
