@@ -30,9 +30,10 @@ export default function Mission() {
             alignItems: 'top',
             padding: '36px 0px'
         }}>
-            {data.map((box) => (
-                <Grid css={{
-                    padding: '0px 18px'
+            {data.map((box, index) => (
+                <Grid key={index} css={{
+                    padding: '0px 18px',
+                    position: 'relative', 
                 }}>
                     <Col css={{
                         display: 'flex',
@@ -43,11 +44,18 @@ export default function Mission() {
                         borderStyle: 'solid',
                         borderWidth: '2px',
                         borderColor: '$white',
-                        borderRadius: '8px'
+                        borderRadius: '8px',
+                        paddingTop: '36px', 
                     }}>
                         <Text css={{
                             fontWeight: '$semibold',
-                            fontSize: '$xl'
+                            fontSize: '$xl',
+                            position: 'absolute', 
+                            top: '-18px',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            backgroundColor: '$background',
+                            padding: '0 10px', 
                         }}>
                             {box.heading}
                         </Text>
