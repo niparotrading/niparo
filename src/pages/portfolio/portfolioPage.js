@@ -9,7 +9,6 @@ import Toiletteries from '../../assets/PortfolioImages/Toiletteries.jpg'
 import CorperateEvent from '../../assets/PortfolioImages/CorporateEvent.jpg'
 import PantryEdibles from '../../assets/PortfolioImages/PantryEdibles.jpg'
 import Cutleries from '../../assets/PortfolioImages/Cutlery.jpg' 
-
 import { Button, Col, Grid, Link, Row, Text, Image} from "@nextui-org/react";
 import "./portfolioPage.css"
 
@@ -119,15 +118,15 @@ export default function PortfolioPage(){
                     {data.map((service) => (
                         <Grid className="image-containerPortfolio" css={{
                             margin: '24px',
-                            height: '200px', 
-                            width: '300px', 
+                            height: '250px', 
+                            width: '350px', 
                         }}>
                              <Image
                                 alt={service.name}
                                 src={service.image}
                                 css={{
-                                    height: '200px', 
-                                    width: '300px', 
+                                    height: '250px', 
+                                    width: '350px', 
                                     objectFit:"cover",
                                     "@hover":{
                                         cursor: 'pointer'
