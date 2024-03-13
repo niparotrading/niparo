@@ -3,6 +3,12 @@ import HomeLanding from "../../components/Hlanding/landing";
 import Scroller from "../../components/Hmarquee/marquee";
 import Mission from "../../components/Hmission/mission";
 import Services from "../../components/Hservices/services";
+import Amasht from '../../assets/Distributors/Amasht.jpeg'
+import Britannia from '../../assets/Distributors/Britannia.jpeg'
+import MMM from '../../assets/Distributors/3M.png'
+import Conta from '../../assets/Distributors/ContaGroup.jpeg'
+import Diversey from '../../assets/Distributors/diversey-logo-vector.svg'
+import Hallmarks from "../../components/Hhallmarks/hallmarks";
 
 export default function HomePage() {
 
@@ -24,6 +30,15 @@ export default function HomePage() {
             subheading: 'Experience'
         },
     ]
+
+    let distributorsData = [
+        Amasht,
+        Britannia,
+        MMM,
+        Conta,
+        Diversey
+    ]
+
     return (
         <>
             <HomeLanding />
@@ -31,6 +46,8 @@ export default function HomePage() {
             <Scroller type="texts" data={textsData}/> 
             <Mission />
             <Services />
+            <Scroller type="distributors" data={distributorsData}/>
+            <Hallmarks />
         </>
     )
 }

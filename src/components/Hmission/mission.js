@@ -28,13 +28,10 @@ export default function Mission() {
         <Grid.Container css={{
             jc: 'center',
             alignItems: 'top',
-            padding: '36px 0px',
+            padding: '36px 0px 0px 0px',
             "@smMax": {
-              paddingBottom: '72px', 
+              paddingBottom: '36px', 
             },
-            "@mdMax": {
-              paddingBottom: '72px',
-            }
         }}>
             {data.map((box, index) => (
                 <Grid key={index} css={{
@@ -42,10 +39,10 @@ export default function Mission() {
                     position: 'relative', 
     
                     "@smMax": {
-                      marginBottom: '72px', 
+                      marginBottom: '36px', 
                     },
                     "@mdMax": {
-                      marginBottom: '72px',
+                      marginBottom: '36px',
                     }
                 }}>
                     <Col css={{

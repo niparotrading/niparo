@@ -13,6 +13,7 @@ import { Button, Col, Grid, Link, Row, Text, Image} from "@nextui-org/react";
 import "./portfolioPage.css"
 
 export default function PortfolioPage(){
+
     let data = [
         {
             name: 'Office Stationary',
@@ -55,6 +56,7 @@ export default function PortfolioPage(){
             image: Cutleries
         },
     ]
+    
     return(
         <>
             <Grid.Container css={{
