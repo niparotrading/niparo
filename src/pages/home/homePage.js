@@ -3,7 +3,7 @@ import React from "react";
 export default function HomePage(){
     return(
         <div>
-            Test
+            I nate hextui
         </div>
     )
 }
