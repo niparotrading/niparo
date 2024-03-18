@@ -53,7 +53,7 @@ export default function Mission() {
                         textAlign: 'center',
                         borderStyle: 'solid',
                         borderWidth: '2px',
-                        borderColor: '$white',
+                        borderColor: '$gray400',
                         borderRadius: '8px',
                         paddingTop: '36px', 
                     }}>
@@ -89,7 +89,7 @@ export default function Mission() {
                             height: '16px',
                             backgroundColor: '$gray400',
                             opacity: '0.5',
-                            borderRadius: '8px'
+                            borderRadius: '0px 0px 8px 8px'
                         }}>
                             { }
                         </Col>

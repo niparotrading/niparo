@@ -128,6 +128,71 @@ const Scroller = (props) => {
         )
     }
 
+    if (type == "clients") {
+        return (
+            <Grid.Container css={{
+                jc: 'center'
+            }}>
+
+                <Text css={{
+                    '@xsMin': {
+                        fontSize: '$4xl',
+                        padding: '36px 0px 24px 0px'
+                    },
+                    '@xsMax': {
+                        fontSize: '$2xl',
+                        padding: '36px 0px 24px 0px'
+                    },
+                    fontWeight: '$semibold',
+                    textGradient: "45deg, $purple600 20%, #CCA3FF 100%",
+                }}>
+                    Clients
+                </Text>
+
+                <Marquee
+                    pauseOnHover={true}
+                    speed={50}
+                    style={{
+                        background: 'black',
+                    }}
+                    direction='right'
+                    gradientColor={[255, 255, 255]}
+                    gradientWidth={'15%'}
+                >
+                    {data.map((distributor) => (
+                        <>
+                            <Row css={{
+                                padding: '0px 0px 0px 0px',
+                                alignItems: 'center'
+                            }}>
+                                <Grid css={{
+                                    padding: '0px 36px'
+                                }}>
+                                    <Image
+                                        css={{
+                                            height: '120px',
+                                            width: '200px',
+                                            objectFit: 'cover',
+                                        }}
+                                        src={distributor}
+                                    />
+                                </Grid>
+                                <Image css={{
+                                    width: '16px',
+                                    height: '16px'
+                                }} src={Bullet}
+                                />
+                            </Row>
+
+
+                        </>
+                    ))}
+                </Marquee>
+
+            </Grid.Container>
+        )
+    }
+
 };
 
 export default Scroller;

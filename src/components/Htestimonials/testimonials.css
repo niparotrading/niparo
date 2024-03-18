@@ -1,0 +1,8 @@
+.carousel-root{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel.carousel-slider{
+    width: 98% !important;
+}

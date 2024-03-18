@@ -1,0 +1,26 @@
+/* hallmarks.css */
+.background-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  filter: blur(12px);
+  z-index: 0; /* Ensure it stays behind the content */
+}
+
+.grid-item-container {
+  position: relative; /* Needed to position the .background-blur absolutely */
+  width: 290px; /* Match your Grid width */
+  margin: 24px 24px;
+  border-radius: 16px;
+  overflow: hidden; /* Ensures the blur doesn't bleed outside the border-radius */
+}
+
+/* Make sure your content is above the blurred background */
+.grid-item-content {
+  position: relative;
+  z-index: 1; /* Higher than .background-blur */
+}
