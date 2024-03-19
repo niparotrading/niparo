@@ -9,13 +9,13 @@ export default function ContactPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault(); 
-
+    
         const formData = {
             Name: fullName,
             Email: email,
             Phone: phone,
         };
-
+    
         try {
             const response = await fetch('https://script.google.com/macros/s/AKfycbwPoYELqz6PKc_Nb0OAXvWT0J2v3J6ZXsffrid116rdB0bYZCsdqDfvZksm8wVF0ssprw/exec', {
                 method: 'POST',
@@ -25,12 +25,20 @@ export default function ContactPage() {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
             });
-
-            console.log('Form submitted', response);
+    
+            if (response) {
+                setFullName('');
+                setEmail('');
+                setPhone('');
+                console.log('Form submitted successfully');
+            } else {
+                console.error('Form submission failed');
+            }
         } catch (error) {
-            console.error('Error submitting form', error);
+            console.error('Error submitting form:', error);
         }
     };
+    
 
     return (
         <Grid.Container css={{
