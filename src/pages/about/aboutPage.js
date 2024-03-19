@@ -1,4 +1,5 @@
-import { Grid, Text, Collapse, Col } from "@nextui-org/react";
+import { Grid, Text, Collapse, Col, Image } from "@nextui-org/react";
+import Map from '../../assets/Maps.png'
 import React from "react";
 
 export default function AboutPage() {
@@ -40,7 +41,7 @@ export default function AboutPage() {
             <Grid.Container
                 css={{
                     jc: 'center',
-                    alignItems: 'center'
+                    alignItems: 'start'
                 }}>
                 {/* Left Side */}
                 <Grid
@@ -53,7 +54,7 @@ export default function AboutPage() {
                         }
                     }}>
                     <Collapse.Group splitted accordion={false}>
-                        <Collapse title="What Is Our Commitment?" >
+                        <Collapse title="What Is Our Commitment?" expanded>
                             <Text css={{ padding: '6px 0px', lineHeight: '1.35' }}>
                                 Our commitment to industry-leading benchmarks is evident in our business practices, focusing on quality, time-bound services, rapid response, efficient deliverables, meticulous accounting, and stringent compliance measures.
                             </Text>
@@ -112,24 +113,50 @@ export default function AboutPage() {
                 </Grid>
             </Grid.Container>
 
-            <Grid.Container>
-                <Grid>
-                    <Col>
+            <Grid.Container
+            css={{
+                jc: 'center',
+                alignItems: 'center'
+            }}>
+                <Grid css={{
+                    jc: 'center',
+                    alignItems: 'center',
+                    padding: '12px'
+                }}>
+                    <Col css={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        jc: 'center'
+                    }}>
                         <Text css={{
                             '@xsMin': {
-                                fontSize: '$xl',
+                                fontSize: '$2xl',
                                 padding: '16px 0px 16px 0px'
                             },
                             '@xsMax': {
-                                fontSize: '$md',
+                                fontSize: '$xl',
                                 padding: '24px 0px 16px 0px'
                             },
                             fontWeight: '$semibold',
-                            textAlign: 'center'
+                            textAlign: 'center',
                         }}>
-                            Reach Us
+                            Our Office ↓
                         </Text>
                         
+                        <Image 
+                        css={{
+                            objectFit: 'cover',
+                            width: '70vw',
+                            '@xsMin':{
+                                height: '100%'
+                            },
+                            '@xsMax':{
+                                height: '500px'
+                            }
+                        }}
+                        src={Map}
+                        />
                     </Col>
                 </Grid>
             </Grid.Container>

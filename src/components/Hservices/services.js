@@ -5,7 +5,7 @@ import Office from '../../assets/PortfolioImages/OfficeStationary.jpg'
 import FirstAid from '../../assets/PortfolioImages/FirstAid.jpg'
 import Gym from '../../assets/PortfolioImages/GymEquipment.jpg'
 import Sanitization from '../../assets/PortfolioImages/Santization.jpg'
-import { Col, Grid, Link, Button, Image, Text} from "@nextui-org/react";
+import { Col, Grid, Link, Button, Image, Text } from "@nextui-org/react";
 import './services.css'
 
 export default function Services() {
@@ -44,11 +44,11 @@ export default function Services() {
         }}>
 
             <Text css={{
-                '@xsMin':{
+                '@xsMin': {
                     fontSize: '$4xl',
                     padding: '36px 0px 0px 0px'
                 },
-                '@xsMax':{
+                '@xsMax': {
                     fontSize: '$2xl'
                 },
                 fontWeight: '$semibold',
@@ -67,27 +67,27 @@ export default function Services() {
                     {data.map((service) => (
                         <Grid className="image-container" css={{
                             margin: '24px',
-                            height: '250px', 
-                            width: '250px', 
+                            height: '250px',
+                            width: '250px',
                         }}>
-                             <Image
+                            <Image
                                 alt={service.name}
                                 src={service.image}
                                 css={{
-                                    height: '250px', 
-                                    width: '250px', 
-                                    objectFit:"cover",
-                                    "@hover":{
+                                    height: '250px',
+                                    width: '250px',
+                                    objectFit: "cover",
+                                    "@hover": {
                                         cursor: 'pointer'
                                     }
-                                }} 
+                                }}
                             />
 
                             <Text className="image-title" css={{
                                 fontSize: '$lg',
                                 fontWeight: '$semibold',
                                 lineHeight: '1.1',
-                                "@hover":{
+                                "@hover": {
                                     cursor: 'pointer'
                                 }
                             }}>

@@ -45,7 +45,8 @@ export default function Hallmarks() {
 
     return (
         <Grid.Container css={{
-            jc: 'center'
+            jc: 'center',
+            padding: '0 5%'
         }}>
             <Text css={{
                 '@xsMin': {
