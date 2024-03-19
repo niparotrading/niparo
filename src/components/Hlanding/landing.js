@@ -1,8 +1,10 @@
 import { Button, Col, Grid, Link, Row, Text } from "@nextui-org/react";
-import React from "react";
+import React, { useRef } from "react";
 import './landing.css'
 
 export default function HomeLanding() {
+    const myRef = useRef(null)
+    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     return (
         <div>
             <Grid.Container className="landingBG" css={{
@@ -61,7 +63,9 @@ export default function HomeLanding() {
 
                     {/* Link goes below */}
                     <Link> 
-                        <Button color="secondary" auto flat >
+                        <Button color="secondary" auto flat onPress={()=>{
+                            executeScroll()
+                        }}>
                             Get Started ⤵
                         </Button>
                     </Link>
@@ -88,6 +92,7 @@ export default function HomeLanding() {
                         We exist to empower you to focus on what truly matters – your core business.
                     </Text>
                 </Col>
+                <div ref={myRef}></div>
             </Grid.Container>
         </div>
     )
