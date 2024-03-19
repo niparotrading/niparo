@@ -9,7 +9,7 @@ import Toiletteries from '../../assets/PortfolioImages/Toiletteries.jpg'
 import CorperateEvent from '../../assets/PortfolioImages/CorporateEvent.jpg'
 import PantryEdibles from '../../assets/PortfolioImages/PantryEdibles.jpg'
 import Cutleries from '../../assets/PortfolioImages/Cutlery.jpg'
-import { Button, Col, Grid, Link, Row, Text, Image } from "@nextui-org/react";
+import { Button, Col, Grid, Link, Row, Text, Image, Collapse } from "@nextui-org/react";
 import "./portfolioPage.css"
 
 export default function PortfolioPage() {
@@ -17,43 +17,53 @@ export default function PortfolioPage() {
     let data = [
         {
             name: 'Office Stationary',
-            image: Office
+            image: Office,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'Janitorial Equipment',
-            image: Janitorial
+            image: Janitorial,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: "Toiletteries",
             image: Toiletteries,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'Sanitization',
-            image: Sanitization
+            image: Sanitization,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'IT Consumables',
-            image: ITConsumables
+            image: ITConsumables,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'Corporate Events',
-            image: CorperateEvent
+            image: CorperateEvent,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'Pantry Edibles',
-            image: PantryEdibles
+            image: PantryEdibles,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'First Aid Kits',
-            image: FirstAid
+            image: FirstAid,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'Gym Equipment',
-            image: Gym
+            image: Gym,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'Cutlieries & Crockeries',
-            image: Cutleries
+            image: Cutleries,
+            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
     ]
 
@@ -116,46 +126,53 @@ export default function PortfolioPage() {
                         </Text>
                     </Row>
                     <Row>
-                        <div className="galleryPortfolio">
-                            {data.map((service) => (
-                                <Grid className="image-containerPortfolio" css={{
-                                    margin: '24px',
-                                    height: '250px',
-                                    width: '350px',
-                                }}>
-                                    <Image
-                                        alt={service.name}
-                                        src={service.image}
-                                        css={{
-                                            height: '250px',
-                                            width: '350px',
-                                            objectFit: "cover",
-                                            "@hover": {
-                                                cursor: 'pointer'
-                                            }
-                                        }}
-                                    />
+                    <Grid.Container gap={2} justify="center">
+    {data.map((service, index) => (
+                    <Grid xs={12} sm={6} md={4} key={index}>
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                            <Image
+                                alt={service.name}
+                                src={service.image}
+                                css={{
+                                    height: '300px',
+                                    width: '500px',
+                                    objectFit: 'cover',
+                                    "@hover": {
+                                        cursor: 'pointer'
+                                    }
+                                }}
+                            />
+                            <Collapse.Group splitted accordion={false}>
+                                <Collapse title={service.name} css={{
+                                    marginTop: '1rem', 
+                                    width: '500px',
+                                    jc: 'center',
+                                    alignItems: 'center',
+                                    justifyContent: 'center', 
+                                    '.nextui-collapse-title': { 
+                                        textDecoration: 'underline', 
+                                        width: '100%', 
+                                        justifyContent: 'center', 
+                                        textAlign:"center"
+                                    }
 
-                                    <Text className="image-titlePortfolio" css={{
+                                }}>
+                                    <Text css={{
                                         fontSize: '$lg',
-                                        fontWeight: '$semibold',
-                                        lineHeight: '1.1',
-                                        textDecoration: "underline",
-                                        "@hover": {
-                                            cursor: 'pointer'
-                                        },
-                                        '@mdMin': {
-                                            padding: '12px 60px',
-                                        },
-                                        '@mdMax': {
-                                            padding: '12px 24px',
-                                        }
+                                        padding: '0 1rem', 
                                     }}>
-                                        {service.name}
+                                        {service.info}
                                     </Text>
-                                </Grid>
-                            ))}
-                        </div></Row>
+                                </Collapse>
+                            </Collapse.Group>
+                        </div>
+                    </Grid>
+                ))}
+            </Grid.Container>
+
+
+
+                    </Row>
 
                     <Row>
                         <Text css={{

@@ -22,7 +22,7 @@
   
   .image-titlePortfolio {
     color: white; 
-    text-align: center;
+    /* text-align: center; */
   }
   
   .image-containerPortfolio:hover .image-titlePortfolio {
