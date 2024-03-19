@@ -5,7 +5,7 @@ import Test1 from '../../assets/Testimonial1.jpeg'
 import Test2 from '../../assets/Testimonial2.jpg'
 import startingQuote from '../../assets/startingQuote.png'
 import endingQuote from '../../assets/endingQuote.png'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Ensure carousel CSS is imported
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
 import './testimonials.css'
 
 export default function Testimonials() {
@@ -48,17 +48,17 @@ export default function Testimonials() {
                 swipeable={true}
                 useKeyboardArrows={true}
                 showThumbs={false}
-                centerMode={true} // Enable center mode if desired
-                centerSlidePercentage={50} // Adjust slide percentage to control size
+                centerMode={true} 
+                centerSlidePercentage={50} 
             >
                 {data.map((testimonial, index) => (
                     <div key={index} style={{ display: 'flex', justifyContent: 'center' }}>
-                        <Grid css={{ maxWidth: '500px' }}> {/* Adjust maxWidth as needed */}
+                        <Grid css={{ maxWidth: '500px' }}> 
                             <Row justify="center" align="center">
                                 <Col css={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                     <Image src={testimonial.image}
                                         css={{
-                                            width: '100px', // Adjust image size as needed
+                                            width: '100px', 
                                             height: '100px',
                                             borderRadius: '50%'
                                         }}
