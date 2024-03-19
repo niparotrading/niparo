@@ -93,13 +93,19 @@ export default function Testimonials() {
                                     width={'24px'}
                                     height={'24px'}/>
                                     <Text css={{ 
-                                        fontSize: '$lg', 
                                         padding: '0 12px',
                                         textAlign: 'start',
                                         fontWeight: '$semibold',
                                         alignItems: 'start',
                                         display: 'flex',
-                                        maxW: '320px'
+                                        '@xsMin':{
+                                            maxW: '320px',
+                                            fontSize: '$lg', 
+                                        },
+                                        '@xsMax':{
+                                            maxW: '250px',
+                                            fontSize: '$sm'
+                                        }
                                     }}>
                                         {testimonial.content}
                                     </Text>
