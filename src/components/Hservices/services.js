@@ -66,7 +66,7 @@ export default function Services() {
                 <div className="gallery">
                     {data.map((service) => (
                         <Grid className="image-container" css={{
-                            margin: '24px',
+                            margin: '24px 64px',
                             height: '250px',
                             width: '250px',
                         }}>

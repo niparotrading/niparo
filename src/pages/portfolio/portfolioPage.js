@@ -18,17 +18,17 @@ export default function PortfolioPage() {
         {
             name: 'Office Stationary',
             image: Office,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: "We provide a complete range of mechanical, electrical, and office stationery items."
         },
         {
             name: 'Janitorial Equipment',
             image: Janitorial,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: 'We offer a wide range of Tissues, Hand dryers and Dispensers.'
         },
         {
             name: "Toiletteries",
             image: Toiletteries,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: "Complete range of housekeeping consumables from Abrasive cleaners to Non-Abrasive Cleaners Kitchen cleaning products, Bathroom Cleaning Products, Multi-Surface Cleaners, Furniture Cleaning Products Cleaning Cloths, Mops, and Brushes, etc."
         },
         {
             name: 'Sanitization',
@@ -43,7 +43,7 @@ export default function PortfolioPage() {
         {
             name: 'Corporate Events',
             image: CorperateEvent,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: "We offer all branded pantry items ranging from Britannia, Parle, ITC, PepsiCo, Coke, Amul, Too Yum, McCain, etc"
         },
         {
             name: 'Pantry Edibles',
@@ -53,12 +53,12 @@ export default function PortfolioPage() {
         {
             name: 'First Aid Kits',
             image: FirstAid,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: "We deal with all safety equipment, first aid kits, and PPE kits"
         },
         {
             name: 'Gym Equipment',
             image: Gym,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: "We provide sports items for all sports (cricket, football, tennis, badminton, etc.) and gym equipment treadmills, exercise bikes, and free weights equipment. TT Tables, Foosball Tables, Snooker/Pool Table."
         },
         {
             name: 'Cutlieries & Crockeries',
@@ -131,25 +131,25 @@ export default function PortfolioPage() {
                         }}>
                             {data.map((service, index) => (
                                 <Grid xs={12} sm={6} md={4} key={index} css={{
-                                    margin: '12px 60px'
+                                    margin: '24px 60px'
                                 }}>
                                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
                                         <Image
                                             alt={service.name}
                                             src={service.image}
                                             css={{
-                                                height: '300px',
-                                                width: '500px',
+                                                height: '250px',
+                                                width: '400px',
                                                 objectFit: 'cover',
                                                 "@hover": {
                                                     cursor: 'pointer'
                                                 }
                                             }}
                                         />
-                                        <Collapse.Group splitted accordion={false}>
+                                        <Collapse.Group>
                                             <Collapse title={service.name} css={{
-                                                marginTop: '1rem',
-                                                width: '500px',
+                                                // marginTop: '1rem',
+                                                width: '100%',
                                                 jc: 'center',
                                                 alignItems: 'center',
                                                 justifyContent: 'center',
@@ -157,7 +157,9 @@ export default function PortfolioPage() {
                                                     textDecoration: 'underline',
                                                     width: '100%',
                                                     justifyContent: 'center',
-                                                    textAlign: "center"
+                                                    textAlign: "center",
+                                                    fontWeight: '$medium',
+                                                    fontSize: '$xl'
                                                 }
 
                                             }}>
