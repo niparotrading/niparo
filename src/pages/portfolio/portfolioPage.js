@@ -112,63 +112,67 @@ export default function PortfolioPage() {
                     }}>
                         <Text css={{
                             textAlign: 'center',
-                            fontWeight: '',
+                            fontWeight: '$medium',
                             fontSize: '$lg',
                             lineHeight: '1.3',
                             '@smMin': {
-                                padding: '32px 60px',
+                                padding: '12px 60px',
                             },
                             '@smMax': {
-                                padding: '32px 24px',
+                                padding: '12px 24px',
                             }
                         }}>
                             Embrace a comprehensive range of high-quality office consumables with our diverse material portfolio. From complete housekeeping consumables to being an authorized distributor of renowned brands like Diversey, Unger, Gala, and Rubbermaid, we ensure your workplace is equipped with the best. Our 3M products cater to the FM industry, featuring scrub pads, mats, and dry erase sheets. Explore our dispensers for washrooms, facilities, and kitchen areas, along with a sole distributorship of tissues and all paper products from Amasht.
                         </Text>
                     </Row>
                     <Row>
-                    <Grid.Container gap={2} justify="center">
-    {data.map((service, index) => (
-                    <Grid xs={12} sm={6} md={4} key={index}>
-                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-                            <Image
-                                alt={service.name}
-                                src={service.image}
-                                css={{
-                                    height: '300px',
-                                    width: '500px',
-                                    objectFit: 'cover',
-                                    "@hover": {
-                                        cursor: 'pointer'
-                                    }
-                                }}
-                            />
-                            <Collapse.Group splitted accordion={false}>
-                                <Collapse title={service.name} css={{
-                                    marginTop: '1rem', 
-                                    width: '500px',
-                                    jc: 'center',
-                                    alignItems: 'center',
-                                    justifyContent: 'center', 
-                                    '.nextui-collapse-title': { 
-                                        textDecoration: 'underline', 
-                                        width: '100%', 
-                                        justifyContent: 'center', 
-                                        textAlign:"center"
-                                    }
-
+                        <Grid.Container justify="center" css={{
+                            margin: '24px'
+                        }}>
+                            {data.map((service, index) => (
+                                <Grid xs={12} sm={6} md={4} key={index} css={{
+                                    margin: '12px 60px'
                                 }}>
-                                    <Text css={{
-                                        fontSize: '$lg',
-                                        padding: '0 1rem', 
-                                    }}>
-                                        {service.info}
-                                    </Text>
-                                </Collapse>
-                            </Collapse.Group>
-                        </div>
-                    </Grid>
-                ))}
-            </Grid.Container>
+                                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                                        <Image
+                                            alt={service.name}
+                                            src={service.image}
+                                            css={{
+                                                height: '300px',
+                                                width: '500px',
+                                                objectFit: 'cover',
+                                                "@hover": {
+                                                    cursor: 'pointer'
+                                                }
+                                            }}
+                                        />
+                                        <Collapse.Group splitted accordion={false}>
+                                            <Collapse title={service.name} css={{
+                                                marginTop: '1rem',
+                                                width: '500px',
+                                                jc: 'center',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                '.nextui-collapse-title': {
+                                                    textDecoration: 'underline',
+                                                    width: '100%',
+                                                    justifyContent: 'center',
+                                                    textAlign: "center"
+                                                }
+
+                                            }}>
+                                                <Text css={{
+                                                    fontSize: '$lg',
+                                                    padding: '0 1rem',
+                                                }}>
+                                                    {service.info}
+                                                </Text>
+                                            </Collapse>
+                                        </Collapse.Group>
+                                    </div>
+                                </Grid>
+                            ))}
+                        </Grid.Container>
 
 
 
@@ -177,14 +181,14 @@ export default function PortfolioPage() {
                     <Row>
                         <Text css={{
                             textAlign: 'center',
-                            fontWeight: '',
+                            fontWeight: '$medium',
                             fontSize: '$lg',
                             lineHeight: '1.3',
                             '@smMin': {
-                                padding: '48px 60px',
+                                padding: '24px 60px',
                             },
                             '@smMax': {
-                                padding: '48px 24px',
+                                padding: '24px 24px',
                             }
                         }}>
                             Beyond materials, we extend our support into cutleries, crockeries (both normal and biodegradable), and a range of sanitizers and soaps. In essence, we provide a holistic solution, covering everything from stationery to electrical and plumbing items.
