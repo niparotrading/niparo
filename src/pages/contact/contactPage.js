@@ -1,7 +1,37 @@
 import { Button, Col, Grid, Input, Row, Text } from "@nextui-org/react";
-import React from "react";
+import React, { useState } from "react";
 
 export default function ContactPage() {
+
+    const [fullName, setFullName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault(); 
+
+        const formData = {
+            Name: fullName,
+            Email: email,
+            Phone: phone,
+        };
+
+        try {
+            const response = await fetch('https://script.google.com/macros/s/AKfycbwPoYELqz6PKc_Nb0OAXvWT0J2v3J6ZXsffrid116rdB0bYZCsdqDfvZksm8wVF0ssprw/exec', {
+                method: 'POST',
+                mode: 'no-cors', 
+                body: new URLSearchParams(formData),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+            });
+
+            console.log('Form submitted', response);
+        } catch (error) {
+            console.error('Error submitting form', error);
+        }
+    };
+
     return (
         <Grid.Container css={{
             jc:'center',
@@ -45,48 +75,31 @@ export default function ContactPage() {
                 marginBottom: '20vh'
             }}>
 
-            <Grid css={{
-                '@xsMin': {
-                    borderWidth: '0px 1px 0px 0px',
-                    borderStyle: 'solid',
-                    borderColor: '$grey400'
-                },
-                padding: '24px',
-                width: '320px'
-            }}>
-                <Col css={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    jc: 'center',
-                    gap: '12px',
+<form onSubmit={handleSubmit}>
+                <Grid css={{
+                    '@xsMin': {
+                        borderWidth: '0px 1px 0px 0px',
+                        borderStyle: 'solid',
+                        borderColor: '$grey400'
+                    },
+                    padding: '24px',
+                    width: '320px'
                 }}>
-                    <Text css={{
-                        fontWeight: '$semibold',
-                        '@xsMax': {
-                            fontSize: '$sm'
-                        },
-                        '@xsMin': {
-                            fontSize: '$xl',
-                        },
-                        textAlign: 'center'
+                    <Col css={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        jc: 'center',
+                        gap: '12px',
                     }}>
-                        Contact Form
-                    </Text>
-                    <Input label="Full Name" placeholder="Siddhil Shah" />
-                    {/* Put an email verify check like APL */}
-                    <Input label="Email Address" placeholder="siddhilshah@niparo.com" />
-                    <Row css={{
-                        alignItems: 'end',
-                        gap: '8px'
-                    }}>
-                        {/* Put an phone number verify check like APL */}
-                        <Input label="Phone" placeholder="+91 12345 67890" />
-                        <Button color="secondary" auto flat>
+                        <Input label="Full Name" placeholder="Your Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+                        <Input label="Email Address" placeholder="your_email@domain.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <Input label="Phone" placeholder="+91 12345 67890" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                        <Button color="secondary" auto flat type="submit">
                             Contact Me!
                         </Button>
-                    </Row>
-                </Col>
-            </Grid>
+                    </Col>
+                </Grid>
+            </form>
 
             <Grid css={{
                 padding: '24px',
