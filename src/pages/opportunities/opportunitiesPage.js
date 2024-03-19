@@ -25,7 +25,7 @@ export default function OpportunitiesPage() {
 
             <Grid css={{
                 maxW: '1000px',
-                backgroundColor: '#101010',
+                backgroundColor: '#141414',
                 borderRadius: '16px',
                 padding: '12px 24px',
                 margin: '24px'
@@ -115,7 +115,7 @@ export default function OpportunitiesPage() {
 
             <Grid css={{
                 maxW: '1000px',
-                backgroundColor: '#101010',
+                backgroundColor: '#141414',
                 borderRadius: '16px',
                 padding: '12px 24px',
                 margin: '24px'
@@ -150,7 +150,7 @@ export default function OpportunitiesPage() {
                         },
                         fontWeight: '$medium'
                     }}>
-                        Build a Rewarding Future. Shape Successful Facilities
+                        Build a Rewarding Future, Shape Successful Facilities
                     </Text>
                 </Col>
                 <Col css={{
@@ -169,11 +169,11 @@ export default function OpportunitiesPage() {
                     }}>
                         At Niparo, we're passionate about creating successful facilities and empowering the people who make it happen. We offer a dynamic environment where you can make a real impact.  Your work directly contributes to the success of businesses across industries by ensuring their facilities are efficient, safe, and comfortable.<br></br>
 
-                        Join our team of dedicated professionals and gain valuable experience in facility management<br></br>
+                        • Join our team of dedicated professionals and gain valuable experience in facility management<br></br>
 
-                        We are committed to fostering your growth and development, providing opportunities for you to advance your career and reach your full potential.  Beyond professional development, Niparo prioritizes collaboration.<br></br>
+                        • We are committed to fostering your growth and development, providing opportunities for you to advance your career and reach your full potential.  Beyond professional development, Niparo prioritizes collaboration.<br></br>
 
-                        Thrive in a supportive and positive team atmosphere where teamwork is valued.<br></br>
+                        • Thrive in a supportive and positive team atmosphere where teamwork is valued.<br></br>
                     </Text>
                 </Col>
                 <Col css={{
@@ -209,7 +209,9 @@ export default function OpportunitiesPage() {
             }}>
                 {/* Link goes below */}
                 <Link>
-                    <Button color="secondary" auto flat >
+                    <Button color="secondary" auto flat onPress={()=>{
+                        window.location.pathname="/contact"
+                    }}>
                         Contact Us →
                     </Button>
                 </Link>

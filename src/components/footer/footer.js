@@ -18,7 +18,7 @@ function Footer(){
                         fontSize: '$xs'
                     }
                 }}>
-                    © 2023 Niparo Trading Pvt Ltd. All Rights Reserved.
+                    © 2024 Niparo Trading Pvt Ltd. All Rights Reserved.
                 </Text>
             </Col>
         </Container>

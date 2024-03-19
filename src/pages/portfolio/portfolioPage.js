@@ -164,8 +164,9 @@ export default function PortfolioPage() {
 
                                             }}>
                                                 <Text css={{
-                                                    fontSize: '$lg',
-                                                    padding: '0 1rem',
+                                                    fontSize: '$base',
+                                                    padding: '0px 24px',
+                                                    lineHeight: '1.3'
                                                 }}>
                                                     {service.info}
                                                 </Text>

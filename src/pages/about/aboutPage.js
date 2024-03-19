@@ -51,7 +51,8 @@ export default function AboutPage() {
                         },
                         '@xsMax': {
                             width: '300px'
-                        }
+                        },
+                        margin: '12px 0px 24px 0px'
                     }}>
                     <Collapse.Group splitted accordion={false}>
                         <Collapse title="What Is Our Commitment?" expanded>
@@ -76,7 +77,8 @@ export default function AboutPage() {
                         },
                         '@xsMax': {
                             width: '300px'
-                        }
+                        },
+                        margin: '12px 0px 24px 0px'
                     }}>
                     <Collapse.Group splitted accordion={false}>
                         <Collapse title="Why Choose Niparo?">

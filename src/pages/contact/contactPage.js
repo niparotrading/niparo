@@ -1,5 +1,6 @@
 import { Button, Col, Grid, Input, Row, Text } from "@nextui-org/react";
 import React, { useState } from "react";
+import './contactPage.css'
 
 export default function ContactPage() {
 
@@ -8,24 +9,24 @@ export default function ContactPage() {
     const [phone, setPhone] = useState('');
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); 
-    
+        e.preventDefault();
+
         const formData = {
             Name: fullName,
             Email: email,
             Phone: phone,
         };
-    
+
         try {
             const response = await fetch('https://script.google.com/macros/s/AKfycbwPoYELqz6PKc_Nb0OAXvWT0J2v3J6ZXsffrid116rdB0bYZCsdqDfvZksm8wVF0ssprw/exec', {
                 method: 'POST',
-                mode: 'no-cors', 
+                mode: 'no-cors',
                 body: new URLSearchParams(formData),
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
             });
-    
+
             if (response) {
                 setFullName('');
                 setEmail('');
@@ -38,11 +39,11 @@ export default function ContactPage() {
             console.error('Error submitting form:', error);
         }
     };
-    
+
 
     return (
         <Grid.Container css={{
-            jc:'center',
+            jc: 'center',
         }}>
             <Text css={{
                 '@xsMin': {
@@ -83,98 +84,110 @@ export default function ContactPage() {
                 marginBottom: '20vh'
             }}>
 
-<form onSubmit={handleSubmit}>
+                <form className="contact-form" onSubmit={handleSubmit}>
+                    <Grid css={{
+                        padding: '24px',
+                        width: '320px'
+                    }}>
+                        <Col css={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            jc: 'center',
+                            gap: '12px',
+                        }}>
+                            <Text css={{
+                                fontWeight: '$semibold',
+                                '@xsMin':{
+                                    fontSize: '$xl'
+                                },
+                                '@xsMax':{
+                                    fontSize: '$md'
+                                },
+                                textAlign: 'center'
+                            }}>
+                                Contact Form
+                            </Text>
+                            <Input label="Full Name" placeholder="Your Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} />
+                            <Input label="Email Address" placeholder="your_email@domain.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <Row css={{
+                                alignItems: 'end',
+                                gap: '4px'
+                            }}>
+                                <Input label="Phone" placeholder="+91 12345 67890" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                                <Button color="secondary" auto flat type="submit">
+                                    Contact Me!
+                                </Button>
+                            </Row>
+                        </Col>
+                    </Grid>
+                </form>
+
                 <Grid css={{
-                    '@xsMin': {
-                        borderWidth: '0px 1px 0px 0px',
-                        borderStyle: 'solid',
-                        borderColor: '$grey400'
-                    },
                     padding: '24px',
                     width: '320px'
                 }}>
                     <Col css={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        jc: 'center',
-                        gap: '12px',
+                        padding: '4px 0px'
                     }}>
-                        <Input label="Full Name" placeholder="Your Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} />
-                        <Input label="Email Address" placeholder="your_email@domain.com" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <Input label="Phone" placeholder="+91 12345 67890" value={phone} onChange={(e) => setPhone(e.target.value)} />
-                        <Button color="secondary" auto flat type="submit">
-                            Contact Me!
-                        </Button>
+                        <Text css={{
+                            fontSize: '$xl',
+                            fontWeight: '$semibold',
+                            textDecoration: 'underline'
+                        }}>
+                            Address
+                        </Text>
+                        <Text css={{
+                            fontWeight: '$medium',
+                            fontSize: '$base',
+                            lineHeight: '1.3'
+                        }}>
+                            #30-31, Anjanadri Green View, <br></br>
+                            Opp To Anjaneya Temple, <br></br>
+                            Bileshvalli Village, <br></br>
+                            Hennur Road Cross, <br></br>
+                            Bangalore - 560077
+                        </Text>
+                    </Col>
+
+                    <Col css={{
+                        padding: '4px 0px'
+                    }}>
+                        <Text css={{
+                            fontSize: '$xl',
+                            fontWeight: '$semibold',
+                            textDecoration: 'underline'
+                        }}>
+                            Phone
+                        </Text>
+                        <Text css={{
+                            fontWeight: '$medium',
+                            fontSize: '$base',
+                            lineHeight: '1.3'
+                        }}>
+                            Sales & Operations -  +91 9902500655 /
+                            +91 9900028128 / +91 968603789 / +91 9900028126
+                        </Text>
+                    </Col>
+
+                    <Col css={{
+                        padding: '4px 0px'
+                    }}>
+                        <Text css={{
+                            fontSize: '$xl',
+                            fontWeight: '$semibold',
+                            textDecoration: 'underline'
+                        }}>
+                            Email
+                        </Text>
+                        <Text css={{
+                            fontWeight: '$medium',
+                            fontSize: '$base',
+                            lineHeight: '1.3'
+                        }}>
+                            salesinfo@niparotrading.com
+                        </Text>
                     </Col>
                 </Grid>
-            </form>
-
-            <Grid css={{
-                padding: '24px',
-                width: '320px'
-            }}>
-                <Col css={{
-                    padding: '4px 0px'
-                }}>
-                    <Text css={{
-                        fontSize: '$xl',
-                        fontWeight: '$semibold',
-                        textDecoration: 'underline'
-                    }}>
-                        Address
-                    </Text>
-                    <Text css={{
-                        fontWeight: '$medium',
-                        fontSize: '$base',
-                        lineHeight: '1.3'
-                    }}>
-                        #30-31, Anjanadri Green View, <br></br>
-                        Opp To Anjaneya Temple, <br></br>
-                        Bileshvalli Village, <br></br>
-                        Hennur Road Cross, <br></br>
-                        Bangalore - 560077
-                    </Text>
-                </Col>
-
-                <Col css={{
-                    padding: '4px 0px'
-                }}>
-                    <Text css={{
-                        fontSize: '$xl',
-                        fontWeight: '$semibold',
-                        textDecoration: 'underline'
-                    }}>
-                        Phone
-                    </Text>
-                    <Text css={{
-                        fontWeight: '$medium',
-                        fontSize: '$base',
-                        lineHeight: '1.3'
-                    }}>
-                        Sales & Operations -  +91 9902500655 /
-                        +91 9900028128 / +91 968603789 / +91 9900028126 
-                    </Text>
-                </Col>
-
-                <Col css={{
-                    padding: '4px 0px'
-                }}>
-                    <Text css={{
-                        fontSize: '$xl',
-                        fontWeight: '$semibold',
-                        textDecoration: 'underline'
-                    }}>
-                        Email
-                    </Text>
-                    <Text css={{
-                        fontWeight: '$medium',
-                        fontSize: '$base',
-                        lineHeight: '1.3'
-                    }}>
-                        salesinfo@niparotrading.com
-                    </Text>
-                </Col>
-            </Grid>
 
             </Grid.Container>
 
