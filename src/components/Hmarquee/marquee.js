@@ -11,7 +11,7 @@ const Scroller = (props) => {
     if (type == "texts") {
         return (
             <Marquee
-                pauseOnHover={true}
+                pauseOnHover={false}
                 speed={50}
                 style={{
                     background: 'black',
@@ -85,7 +85,7 @@ const Scroller = (props) => {
                 </Text>
 
                 <Marquee
-                    pauseOnHover={true}
+                    pauseOnHover={false}
                     speed={50}
                     style={{
                         background: 'black',
@@ -150,7 +150,7 @@ const Scroller = (props) => {
                 </Text>
 
                 <Marquee
-                    pauseOnHover={true}
+                    pauseOnHover={false}
                     speed={50}
                     style={{
                         background: 'black',
