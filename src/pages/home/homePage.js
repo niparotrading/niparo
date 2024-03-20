@@ -29,7 +29,7 @@ export default function HomePage() {
 
     let textsData = [
         {
-            heading: '95% Projects Delivered',
+            heading: '99% Projects Delivered',
             subheading: 'Before 1st Deadling'
         },
         {

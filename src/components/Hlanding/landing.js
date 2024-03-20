@@ -28,7 +28,7 @@ export default function HomeLanding() {
                         alignItems: 'center'
                     }}>
                         <Text css={{
-                            fontSize: '$5xl',
+                            fontSize: '$6xl',
                             fontWeight: '$semibold',
                             lineHeight: '1.1',
                             textAlign: 'right',
@@ -40,8 +40,7 @@ export default function HomeLanding() {
                                 fontSize: '$4xl'
                             }
                         }}>
-                            NIPARO <br></br>
-                            TRADING
+                            NIPARO 
                         </Text>
                         <Text css={{
                             fontSize: '$xl',
@@ -73,7 +72,7 @@ export default function HomeLanding() {
                     <Text hideIn={"xs"} css={{
                         textAlign: 'center',
                         fontWeight: '$semibold',
-                        fontSize: '$md',
+                        fontSize: '$xl',
                         lineHeight: '1.3',
                         padding: '48px 0px'
                     }}>
