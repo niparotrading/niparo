@@ -129,7 +129,7 @@ export default function PortfolioPage() {
                                 padding: '12px 24px',
                             }
                         }}>
-                            Embrace a comprehensive range of high-quality office consumables with our diverse material portfolio. From complete housekeeping consumables to being an authorized distributor of renowned brands like Diversey, Unger, Gala, and Rubbermaid, we ensure your workplace is equipped with the best. Our 3M products cater to the FM industry, featuring scrub pads, mats, and dry erase sheets. Explore our dispensers for washrooms, facilities, and kitchen areas, along with a sole distributorship of tissues and all paper products from Amasht.
+                            Embrace a comprehensive range of high-quality office consumables with our diverse material portfolio. From complete housekeeping consumables to being an authorized distributor of renowned brands like Diversey, we ensure your workplace is equipped with the best. Our 3M products cater to the FM industry, featuring scrub pads, mats, and dry erase sheets. Explore our dispensers for washrooms, facilities, and kitchen areas, along with a sole distributorship of tissues and all paper products from Amasht.
                         </Text>
                     </Row>
                     <Row>
