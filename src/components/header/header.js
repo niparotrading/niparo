@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import { Navbar, Link, Image, Popover, Text, NavbarMenuToggle, NavbarContent, NavbarBrand } from "@nextui-org/react";
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/Logo.jpeg'
 import LinkedIn from '../../assets/linkedin2.png'
 
 function Header() {
