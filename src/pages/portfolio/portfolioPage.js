@@ -11,6 +11,16 @@ import PantryEdibles from '../../assets/PortfolioImages/PantryEdibles.jpg'
 import Cutleries from '../../assets/PortfolioImages/Cutlery.jpg'
 import Bin from '../../assets/PortfolioImages/Bin.jpg'
 import WG from '../../assets/PortfolioImages/WhiteGoods.jpg'
+import restroomessentials from '../../assets/PortfolioImages/restroomessentials.png'
+import facilitymaintenancemachinery from '../../assets/PortfolioImages/facilitymaintenancemachinery.jpg'
+import hygeine from '../../assets/PortfolioImages/hygeine.jpg'
+import essenitialwhitegoods from '../../assets/PortfolioImages/essentialwhitegoods.jpg'
+
+
+
+
+
+
 import { Button, Col, Grid, Link, Row, Text, Image, Collapse } from "@nextui-org/react";
 import "./portfolioPage.css"
 
@@ -19,17 +29,17 @@ export default function PortfolioPage() {
     let data = [
         {
             name: 'Housekeeping Consumables',
-            image: Sanitization,
+            image: facilitymaintenancemachinery,
             info: "Streamline Cleanliness & Maintain a sparkling facility with: Cleaning Chemicals: High-performance formulas for tackling various surfaces and messes. Dispensers: Wall-mounted or portable dispensers for controlled use of cleaning solutions. Cleaning Tools & Equipment: Durable mops, brooms, vacuum cleaners, and other tools for efficient cleaning. Trash Removal Supplies: Trash bags, liners, bins, and recycling bins for seamless waste disposal. Trusted brand options – Diversey (Taski Chemicals)"
         },
         {
-            name: "Hygiene Essentials",
-            image: Toiletteries,
+            name: "Hygiene",
+            image: hygeine,
             info: "Ensures a healthy and hygienic environment for occupants and visitors with: Facial Tissues & Toilet Paper: Promote comfort and hygiene in restrooms. Hand Sanitizers & Disinfectants: Combat germs and maintain cleanliness throughout your facility. Paper Towels & Dispensers: Efficiently manage hand drying needs. Multipurpose Wipes: Convenient for quick cleaning and surface disinfection. Trusted brand options - Amasht & Saraya Mystair"
         },
         {
-            name: 'Restroom Supplies',
-            image: Janitorial,
+            name: 'Restroom Essentials',
+            image: restroomessentials,
             info: 'Maintain clean and efficient restrooms with our comprehensive selection: Hand Dryers: Energy-efficient and hygienic hand drying options for a touchless experience. Soap Dispensers: Choose from touchless, manual, or wall-mounted dispensers for various soap types (liquid, foam, or spray). Toilet Paper Dispensers: High-capacity or single-roll dispensers for optimal efficiency and user convenience. Trusted brand options - Euronics, Amasht & Saraya Mystair.'
         },
         {
@@ -39,7 +49,7 @@ export default function PortfolioPage() {
         },
         {
             name: 'Essential White Goods',
-            image: WG,
+            image: essenitialwhitegoods,
             info: "Enhance employee well-being and optimize operations with our reliable white goods: Refrigerators & Freezers, Microwaves, Water Coolers, Washing Machines & Dryers, Televisions. Trusted brand options: LG, Samsung, Bluestar, Bosch"
         },
         {
