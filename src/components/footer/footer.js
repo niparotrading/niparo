@@ -16,7 +16,8 @@ function Footer(){
                     borderWidth: '1px 0px 0px 0px',
                     '@xsMax':{
                         fontSize: '$xs'
-                    }
+                    },
+                    marginTop: '24px'
                 }}>
                     © 2024 Niparo Trading Pvt Ltd. All Rights Reserved.
                 </Text>

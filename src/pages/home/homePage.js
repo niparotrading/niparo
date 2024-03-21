@@ -86,10 +86,10 @@ export default function HomePage() {
             <Scroller type="texts" data={textsData}/> 
             <Mission />
             <Services />
-            <Scroller type="distributors" data={distributorsData}/>
-            <Hallmarks />
             <Scroller type="clients" data={clientsData}/>
-            <Testimonials/>
+            <Hallmarks />
+            <Scroller type="distributors" data={distributorsData}/>
+            {/* <Testimonials/> */}
         </>
     )
 }

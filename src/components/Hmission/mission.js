@@ -10,17 +10,17 @@ export default function Mission() {
         {
             heading: 'Our Promise',
             image: Logo1,
-            content: 'To Envision, Endeavor, Enhance, Enrich customer delight and satisfaction at every step of our business association with all clients & be positively proactive to keep in pace with ever changing needs of clients leading to mutual growth.'
+            content: 'We focus on building lasting client relationships by exceeding expectations at every touchpoint. We proactively adapt to your evolving needs, ensuring mutual success.'
         },
         {
             heading: 'About Us',
             image: Logo2,
-            content: 'An organization, operating since 1999 successfully supporting our clients professionally, in fulfilling their needs of materials related to Facility Maintenance, Start Up, Expansion & Upgradation.'
+            content: 'Facility Experts. Over 2 decades of supporting your maintenance, startup, expansion & upgrades.'
         },
         {
             heading: 'Way Forward',
             image: Logo3,
-            content: 'Our path forward includes promoting eco-friendly products, cost reduction, staying current, surpassing benchmarks, optimizing budgets, and fostering knowledge-sharing partnerships with OEMs to enhance client capabilities.'
+            content: "Sustainable Growth: We're committed to eco-friendly solutions, cost savings, and exceeding expectations through innovation and partnerships."
         },
     ]
 

@@ -55,7 +55,7 @@ function Header() {
             </Navbar.Content>
 
             <Navbar.Content>
-                <Link className="ig-link" target="_blank" href="https://www.instagram.com/aba_ashoka/">
+                <Link className="ig-link" target="_blank" href="https://www.linkedin.com/company/niparotrading/about/">
                     <Image css={{
                         width: '40px',
                         height: '40px'

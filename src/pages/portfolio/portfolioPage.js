@@ -16,24 +16,24 @@ export default function PortfolioPage() {
 
     let data = [
         {
+            name: 'Housekeeping Consumables',
+            image: Sanitization,
+            info: "Streamline Cleanliness & Maintain a sparkling facility with: Cleaning Chemicals: High-performance formulas for tackling various surfaces and messes. Dispensers: Wall-mounted or portable dispensers for controlled use of cleaning solutions. Cleaning Tools & Equipment: Durable mops, brooms, vacuum cleaners, and other tools for efficient cleaning. Trash Removal Supplies: Trash bags, liners, bins, and recycling bins for seamless waste disposal. Trusted brand options – Diversey (Taski Chemicals)"
+        },
+        {
+            name: "Hygiene Essentials",
+            image: Toiletteries,
+            info: "Ensures a healthy and hygienic environment for occupants and visitors with: Facial Tissues & Toilet Paper: Promote comfort and hygiene in restrooms. Hand Sanitizers & Disinfectants: Combat germs and maintain cleanliness throughout your facility. Paper Towels & Dispensers: Efficiently manage hand drying needs. Multipurpose Wipes: Convenient for quick cleaning and surface disinfection. Trusted brand options - Amasht & Saraya Mystair"
+        },
+        {
+            name: 'Restroom Supplies',
+            image: Janitorial,
+            info: 'Maintain clean and efficient restrooms with our comprehensive selection: Hand Dryers: Energy-efficient and hygienic hand drying options for a touchless experience. Soap Dispensers: Choose from touchless, manual, or wall-mounted dispensers for various soap types (liquid, foam, or spray). Toilet Paper Dispensers: High-capacity or single-roll dispensers for optimal efficiency and user convenience. Trusted brand options - Euronics, Amasht & Saraya Mystair.'
+        },
+        {
             name: 'Office Stationary',
             image: Office,
             info: "We provide a complete range of mechanical, electrical, and office stationery items."
-        },
-        {
-            name: 'Janitorial Equipment',
-            image: Janitorial,
-            info: 'We offer a wide range of Tissues, Hand dryers and Dispensers.'
-        },
-        {
-            name: "Toiletteries",
-            image: Toiletteries,
-            info: "Complete range of housekeeping consumables from Abrasive cleaners to Non-Abrasive Cleaners Kitchen cleaning products, Bathroom Cleaning Products, Multi-Surface Cleaners, Furniture Cleaning Products Cleaning Cloths, Mops, and Brushes, etc."
-        },
-        {
-            name: 'Sanitization',
-            image: Sanitization,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
             name: 'IT Consumables',
@@ -46,14 +46,14 @@ export default function PortfolioPage() {
             info: "We offer all branded pantry items ranging from Britannia, Parle, ITC, PepsiCo, Coke, Amul, Too Yum, McCain, etc"
         },
         {
-            name: 'Pantry Edibles',
+            name: 'FMCG Essentials',
             image: PantryEdibles,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: "Stock your pantry for success with beverages, snacks, Breakfast essentials, instant food, and all kinds of condiments. Trusted brand options: Britannia, PepsiCo, Coca-Cola, Nestle, HUL, ITC, Haldirams and MTR"
         },
         {
-            name: 'First Aid Kits',
-            image: FirstAid,
-            info: "We deal with all safety equipment, first aid kits, and PPE kits"
+            name: 'Cutlieries & Crockeries',
+            image: Cutleries,
+            info: "Elevate Your Facility's Dining Experience with Branded Cutlery & Crockery -All kinds of plates, bowls, glasses, mugs & cups, spoons, forks, dinnerware sets and serving utensils for facility customizable with your branding! Trusted brand options: Borosil, Serve Well, Clay craft, Milton & Ariane"
         },
         {
             name: 'Gym Equipment',
@@ -61,9 +61,9 @@ export default function PortfolioPage() {
             info: "We provide sports items for all sports (cricket, football, tennis, badminton, etc.) and gym equipment treadmills, exercise bikes, and free weights equipment. TT Tables, Foosball Tables, Snooker/Pool Table."
         },
         {
-            name: 'Cutlieries & Crockeries',
-            image: Cutleries,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            name: 'Essential Safety Items',
+            image: FirstAid,
+            info: "Protect your facility from any situation with Fire extinguishers, First aid kits, wheelchairs, stretcher, disposable gloves, safety goggles, and other medical equipment."
         },
     ]
 

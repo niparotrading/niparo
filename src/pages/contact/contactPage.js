@@ -162,10 +162,18 @@ export default function ContactPage() {
                         <Text css={{
                             fontWeight: '$medium',
                             fontSize: '$base',
-                            lineHeight: '1.3'
+                            lineHeight: '1.3',
+                            paddingBottom: '4px'
                         }}>
                             Sales & Operations -  +91 9902500655 /
                             +91 9900028128 / +91 968603789 / +91 9900028126
+                        </Text>
+                        <Text css={{
+                            fontWeight: '$medium',
+                            fontSize: '$base',
+                            lineHeight: '1.3'
+                        }}>
+                            Partnerships & Careers - +91 9535143290 / +91 9845031561 
                         </Text>
                     </Col>
 
