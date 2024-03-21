@@ -9,6 +9,8 @@ import Toiletteries from '../../assets/PortfolioImages/Toiletteries.jpg'
 import CorperateEvent from '../../assets/PortfolioImages/CorporateEvent.jpg'
 import PantryEdibles from '../../assets/PortfolioImages/PantryEdibles.jpg'
 import Cutleries from '../../assets/PortfolioImages/Cutlery.jpg'
+import Bin from '../../assets/PortfolioImages/Bin.jpg'
+import WG from '../../assets/PortfolioImages/WhiteGoods.jpg'
 import { Button, Col, Grid, Link, Row, Text, Image, Collapse } from "@nextui-org/react";
 import "./portfolioPage.css"
 
@@ -31,6 +33,16 @@ export default function PortfolioPage() {
             info: 'Maintain clean and efficient restrooms with our comprehensive selection: Hand Dryers: Energy-efficient and hygienic hand drying options for a touchless experience. Soap Dispensers: Choose from touchless, manual, or wall-mounted dispensers for various soap types (liquid, foam, or spray). Toilet Paper Dispensers: High-capacity or single-roll dispensers for optimal efficiency and user convenience. Trusted brand options - Euronics, Amasht & Saraya Mystair.'
         },
         {
+            name: 'Bins',
+            image: Bin,
+            info: "We offer a diverse range of high-quality bins, crafted from a variety of materials to suit any facility requirement. Choose from: Durable Plastic Bins: Lightweight and cost-effective for everyday waste collection. Stainless Steel Bins: Sleek and hygienic, ideal for high-traffic areas and kitchens. Trusted Brand Options: Otto, Rubbermaid, Aristo, Nilkamal, and Sintex, ensuring quality and reliability"
+        },
+        {
+            name: 'Essential White Goods',
+            image: WG,
+            info: "Enhance employee well-being and optimize operations with our reliable white goods: Refrigerators & Freezers, Microwaves, Water Coolers, Washing Machines & Dryers, Televisions. Trusted brand options: LG, Samsung, Bluestar, Bosch"
+        },
+        {
             name: 'Office Stationary',
             image: Office,
             info: "We provide a complete range of mechanical, electrical, and office stationery items."
@@ -41,14 +53,9 @@ export default function PortfolioPage() {
             info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
         },
         {
-            name: 'Corporate Events',
-            image: CorperateEvent,
-            info: "We offer all branded pantry items ranging from Britannia, Parle, ITC, PepsiCo, Coke, Amul, Too Yum, McCain, etc"
-        },
-        {
             name: 'FMCG Essentials',
             image: PantryEdibles,
-            info: "Stock your pantry for success with beverages, snacks, Breakfast essentials, instant food, and all kinds of condiments. Trusted brand options: Britannia, PepsiCo, Coca-Cola, Nestle, HUL, ITC, Haldirams and MTR"
+            info: "Stock your pantry for success with beverages, snacks, Breakfast essentials, instant food, and all kinds of condiments. Trusted brand options: Britannia, PepsiCo, Coca-Cola, Nestle, HUL, ITC, Haldirams and MTR. We offer all branded pantry items ranging from Britannia, Parle, ITC, PepsiCo, Coke, Amul, Too Yum, McCain, etc"
         },
         {
             name: 'Cutlieries & Crockeries',
