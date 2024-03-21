@@ -1,26 +1,15 @@
 import React from "react";
 import ITConsumables from '../../assets/PortfolioImages/ITConsumables.jpg'
-import Janitorial from '../../assets/PortfolioImages/JanitorialEquipment.jpg'
 import Office from '../../assets/PortfolioImages/OfficeStationary.jpg'
 import FirstAid from '../../assets/PortfolioImages/FirstAid.jpg'
 import Gym from '../../assets/PortfolioImages/GymEquipment.jpg'
-import Sanitization from '../../assets/PortfolioImages/Santization.jpg'
-import Toiletteries from '../../assets/PortfolioImages/Toiletteries.jpg'
-import CorperateEvent from '../../assets/PortfolioImages/CorporateEvent.jpg'
 import PantryEdibles from '../../assets/PortfolioImages/PantryEdibles.jpg'
 import Cutleries from '../../assets/PortfolioImages/Cutlery.jpg'
 import Bin from '../../assets/PortfolioImages/Bin.jpg'
-import WG from '../../assets/PortfolioImages/WhiteGoods.jpg'
 import restroomessentials from '../../assets/PortfolioImages/restroomessentials.png'
 import facilitymaintenancemachinery from '../../assets/PortfolioImages/facilitymaintenancemachinery.jpg'
 import hygeine from '../../assets/PortfolioImages/hygeine.jpg'
 import essenitialwhitegoods from '../../assets/PortfolioImages/essentialwhitegoods.jpg'
-
-
-
-
-
-
 import { Button, Col, Grid, Link, Row, Text, Image, Collapse } from "@nextui-org/react";
 import "./portfolioPage.css"
 
