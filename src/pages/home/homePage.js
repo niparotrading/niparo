@@ -52,7 +52,6 @@ export default function HomePage() {
 
     let distributorsData = [
         Amasht,
-        Britannia,
         MMM,
         Conta,
         Diversey
