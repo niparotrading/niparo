@@ -6,6 +6,13 @@ import Services from "../../components/Hservices/services";
 import Amasht from '../../assets/Distributors/Amasht.jpeg'
 import Britannia from '../../assets/Distributors/Britannia.jpeg'
 import MMM from '../../assets/Distributors/3M.png'
+import euronics from '../../assets/Distributors/euronics.jpg'
+import haldiram from '../../assets/Distributors/halidram-logo.jpg'
+import mtr from '../../assets/Distributors/MTR-Newlogo (1).jpg'
+import saraya from '../../assets/Distributors/sarayamystair.jpg'
+import itc from '../../assets/Distributors/itc.jpg'
+
+
 import Conta from '../../assets/Distributors/ContaGroup.jpeg'
 import Diversey from '../../assets/Distributors/diversey-logo-vector.svg'
 import Hallmarks from "../../components/Hhallmarks/hallmarks";
@@ -54,7 +61,12 @@ export default function HomePage() {
         Amasht,
         MMM,
         Conta,
-        Diversey
+        Diversey,
+        saraya,
+        euronics,
+        haldiram,
+        mtr,
+        itc
     ]
 
     let clientsData = [
