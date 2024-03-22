@@ -30,15 +30,11 @@ export default function HomePage() {
     let textsData = [
         {
             heading: '99% Projects Delivered',
-            subheading: 'Before 1st Deadling'
+            subheading: 'Before 1st Deadline'
         },
         {
-            heading: '20+ Clients',
+            heading: '200+ Clients',
             subheading: 'Served'
-        },
-        {
-            heading: '30+ Services',
-            subheading: 'Offered'
         },
         {
             heading: '25+ Years',
@@ -85,7 +81,7 @@ export default function HomePage() {
             {/* types = ["texts", "distributors", "clients"] */}
             <Scroller type="texts" data={textsData}/> 
             <Mission />
-            <Services />
+            {/* <Services /> */}
             <Scroller type="clients" data={clientsData}/>
             <Hallmarks />
             <Scroller type="distributors" data={distributorsData}/>
