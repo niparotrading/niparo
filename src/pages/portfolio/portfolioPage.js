@@ -12,6 +12,14 @@ import hygeine from '../../assets/PortfolioImages/hygeine.jpg'
 import essenitialwhitegoods from '../../assets/PortfolioImages/essentialwhitegoods.jpg'
 import { Button, Col, Grid, Link, Row, Text, Image, Collapse } from "@nextui-org/react";
 import "./portfolioPage.css"
+import facility from '../../assets/PortfolioImages/facility.jpg'
+import breakroom from '../../assets/PortfolioImages/breakroom.jpg'
+import corpgift from '../../assets/PortfolioImages/corpgifting.jpg'
+import furniture from '../../assets/PortfolioImages/furniture.jpg'
+import mech from '../../assets/PortfolioImages/mechanical.jpg'
+
+
+
 
 export default function PortfolioPage() {
 
@@ -20,6 +28,11 @@ export default function PortfolioPage() {
             name: 'Housekeeping Consumables',
             image: facilitymaintenancemachinery,
             info: "Streamline Cleanliness & Maintain a sparkling facility with: Cleaning Chemicals: High-performance formulas for tackling various surfaces and messes. Dispensers: Wall-mounted or portable dispensers for controlled use of cleaning solutions. Cleaning Tools & Equipment: Durable mops, brooms, vacuum cleaners, and other tools for efficient cleaning. Trash Removal Supplies: Trash bags, liners, bins, and recycling bins for seamless waste disposal. Trusted brand options – Diversey (Taski Chemicals)"
+        },
+        {
+            name: 'Facility Management Machinery',
+            image: facility,
+            info: "Equip your facility with all types of Floor scrubbers, Vacuum cleaners, and other machinery."
         },
         {
             name: "Hygiene",
@@ -44,12 +57,12 @@ export default function PortfolioPage() {
         {
             name: 'Office Stationary',
             image: Office,
-            info: "We provide a complete range of mechanical, electrical, and office stationery items."
+            info: "Must-have desk essentials: pens, pencils, highlighters, notebooks & sticky notes for ideas, stapler & clips for order. Get organized & productive"
         },
         {
             name: 'IT Consumables',
             image: ITConsumables,
-            info: "Dinnerware, cookware, mugs and cups, kitchen utensils and kitchen storage, kitchen appliances, thermos and bottles [Branding available]"
+            info: "Keep your office running smoothly with essential IT consumables! Laptops, printers, Toner cartridges, ink jets and hard disks."
         },
         {
             name: 'FMCG Essentials',
@@ -57,7 +70,7 @@ export default function PortfolioPage() {
             info: "Stock your pantry for success with beverages, snacks, Breakfast essentials, instant food, and all kinds of condiments. Trusted brand options: Britannia, PepsiCo, Coca-Cola, Nestle, HUL, ITC, Haldirams and MTR. We offer all branded pantry items ranging from Britannia, Parle, ITC, PepsiCo, Coke, Amul, Too Yum, McCain, etc"
         },
         {
-            name: 'Cutlieries & Crockeries',
+            name: 'Cutleries & Crockeries ',
             image: Cutleries,
             info: "Elevate Your Facility's Dining Experience with Branded Cutlery & Crockery -All kinds of plates, bowls, glasses, mugs & cups, spoons, forks, dinnerware sets and serving utensils for facility customizable with your branding! Trusted brand options: Borosil, Serve Well, Clay craft, Milton & Ariane"
         },
@@ -67,9 +80,29 @@ export default function PortfolioPage() {
             info: "We provide sports items for all sports (cricket, football, tennis, badminton, etc.) and gym equipment treadmills, exercise bikes, and free weights equipment. TT Tables, Foosball Tables, Snooker/Pool Table."
         },
         {
+            name: 'Break room Entertainment ',
+            image: breakroom,
+            info: "Liven up your break room with a snooker table, ping pong table, board games, or a video game console for relaxation and stress relief."
+        },
+        {
             name: 'Essential Safety Items',
             image: FirstAid,
             info: "Protect your facility from any situation with Fire extinguishers, First aid kits, wheelchairs, stretcher, disposable gloves, safety goggles, and other medical equipment."
+        },
+        {
+            name: 'Corporate Gifting ',
+            image: corpgift,
+            info: "Show employee appreciation with corporate gifts! Choose from desk essentials like notebooks and pens, or go for trendy options like reusable water bottles, logo apparel, portable power banks, or noise-canceling headphones. Personalize with your company logo or a heartfelt message for a lasting impression. "
+        },
+        {
+            name: 'Office furniture ',
+            image: furniture,
+            info: "Office furniture plays a crucial role in employee comfort, productivity, and overall well-being. Equipping your office with ergonomic chairs, adjustable desks, and functional storage solutions can help prevent aches and pains, encourage better posture, and create a more organized workspace."
+        },
+        {
+            name: 'Mechanical, Electrical & Plumbing Items',
+            image: mech,
+            info: "Extension cords, power strips, and surge protectors for electrical needs. Also tools like screwdrivers, pliers, and pipe wrenches for minor fixes."
         },
     ]
 
@@ -128,8 +161,7 @@ export default function PortfolioPage() {
                                 padding: '12px 24px',
                             }
                         }}>
-                            Embrace a comprehensive range of high-quality office consumables with our diverse material portfolio. From complete housekeeping consumables to being an authorized distributor of renowned brands like Diversey, we ensure your workplace is equipped with the best. Our 3M products cater to the FM industry, featuring scrub pads, mats, and dry erase sheets. Explore our dispensers for washrooms, facilities, and kitchen areas, along with a sole distributorship of tissues and all paper products from Amasht.
-                        </Text>
+We offer a comprehensive range of supplies to meet all your facility needs. From housekeeping and janitorial equipment to office supplies, pantry items, office furniture, white goods, and even gym equipment, we provide everything a business could need to keep its operations running smoothly. We also cater to specific areas like restrooms, medical rooms, and safety with specialized products. In short, we are a one-stop shop for all facility management materials.                         </Text>
                     </Row>
                     <Row>
                         <Grid.Container justify="center" css={{
