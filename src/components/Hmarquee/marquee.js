@@ -81,12 +81,12 @@ const Scroller = (props) => {
                     fontWeight: '$semibold',
                     textGradient: "45deg, $purple600 20%, #CCA3FF 100%",
                 }}>
-                    Authorized Distributors For
+                    Distributors For
                 </Text>
 
                 <Marquee
                     pauseOnHover={false}
-                    speed={50}
+                    speed={70}
                     style={{
                         background: 'black',
                     }}
@@ -151,7 +151,7 @@ const Scroller = (props) => {
 
                 <Marquee
                     pauseOnHover={false}
-                    speed={50}
+                    speed={70}
                     style={{
                         background: 'black',
                     }}

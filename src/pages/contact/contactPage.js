@@ -165,8 +165,7 @@ export default function ContactPage() {
                             lineHeight: '1.3',
                             paddingBottom: '4px'
                         }}>
-                            Sales & Operations -  +91 9902500655 /
-                            +91 9900028128 / +91 968603789 / +91 9900028126
+                            Sales & Operations -  +91 9902500655 / +91 9900028126
                         </Text>
                         <Text css={{
                             fontWeight: '$medium',
@@ -192,7 +191,7 @@ export default function ContactPage() {
                             fontSize: '$base',
                             lineHeight: '1.3'
                         }}>
-                            salesinfo@niparotrading.com
+                            salesinfo@niparotrading.com / jagans@niparotrading.com / nadeem@niparotrading.com
                         </Text>
                     </Col>
                 </Grid>

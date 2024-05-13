@@ -6,6 +6,13 @@ import Services from "../../components/Hservices/services";
 import Amasht from '../../assets/Distributors/Amasht.jpeg'
 import Britannia from '../../assets/Distributors/Britannia.jpeg'
 import MMM from '../../assets/Distributors/3M.png'
+import euronics from '../../assets/Distributors/euronics.jpg'
+import haldiram from '../../assets/Distributors/halidram-logo.jpg'
+import mtr from '../../assets/Distributors/MTR-Newlogo (1).jpg'
+import saraya from '../../assets/Distributors/sarayamystair.jpg'
+import itc from '../../assets/Distributors/itc.jpg'
+
+
 import Conta from '../../assets/Distributors/ContaGroup.jpeg'
 import Diversey from '../../assets/Distributors/diversey-logo-vector.svg'
 import Hallmarks from "../../components/Hhallmarks/hallmarks";
@@ -30,15 +37,11 @@ export default function HomePage() {
     let textsData = [
         {
             heading: '99% Projects Delivered',
-            subheading: 'Before 1st Deadling'
+            subheading: 'Before 1st Deadline'
         },
         {
-            heading: '20+ Clients',
+            heading: '200+ Clients',
             subheading: 'Served'
-        },
-        {
-            heading: '30+ Services',
-            subheading: 'Offered'
         },
         {
             heading: '25+ Years',
@@ -56,10 +59,14 @@ export default function HomePage() {
 
     let distributorsData = [
         Amasht,
-        Britannia,
         MMM,
         Conta,
-        Diversey
+        Diversey,
+        saraya,
+        euronics,
+        haldiram,
+        mtr,
+        itc
     ]
 
     let clientsData = [
@@ -68,12 +75,10 @@ export default function HomePage() {
         Client3,
         Client4,
         Client5,
-        Client6,
         Client7,
         Client8,
         Client9,
         Client10,
-        Client11,
         Client12,
         Client13,
         Client14,
@@ -85,7 +90,7 @@ export default function HomePage() {
             {/* types = ["texts", "distributors", "clients"] */}
             <Scroller type="texts" data={textsData}/> 
             <Mission />
-            <Services />
+            {/* <Services /> */}
             <Scroller type="clients" data={clientsData}/>
             <Hallmarks />
             <Scroller type="distributors" data={distributorsData}/>
