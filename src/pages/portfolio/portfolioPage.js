@@ -188,7 +188,7 @@ export default function PortfolioPage() {
 
                     </Row>
 
-                    <Row>
+                    {/* <Row>
                         <Text css={{
                             textAlign: 'center',
                             fontWeight: '$medium',
@@ -204,7 +204,7 @@ export default function PortfolioPage() {
                             Beyond materials, we extend our support into cutleries, crockeries (both normal and biodegradable), and a range of sanitizers and soaps. In essence, we provide a holistic solution, covering everything from stationery to electrical and plumbing items.
 
                             Value is not just about products; it's about service. Collaborating with our service partners, we offer training and site audits related to initiation and upgradation. Committed to your success, we go beyond by providing insights into cost optimization and improvement. Elevate your workspace with us, where quality and service converge seamlessly.                        </Text>
-                    </Row>
+                    </Row> */}
                 </Col>
             </Grid.Container>
         </>

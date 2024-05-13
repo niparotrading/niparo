@@ -40,7 +40,8 @@ export default function HomeLanding() {
                                 fontSize: '$4xl'
                             }
                         }}>
-                            NIPARO 
+                            NIPARO <br/>
+                            TRADING
                         </Text>
                         <Text css={{
                             fontSize: '$xl',
@@ -55,8 +56,8 @@ export default function HomeLanding() {
                                 fontSize: '$md'
                             }
                         }}>
-                            Empowering Your <br></br>
-                            Facility's Success!
+                            Empowering <br></br>
+                            Facilities
                         </Text>
                     </Row>
 
